@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>TodoApp</title>
+	</head>
+	<body>
+		<section class="todoapp">
+			<header class="header">
+				<h1>Tareas</h1>
+				<input class="new-todo" placeholder="Agregar nueva tarea" autofocus>
+				<button class="btnAgregar">
+					<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+					</svg>
+				</button>
+			</header>
+			<section class="main">
+				<input id="toggle-all" class="toggle-all" type="checkbox">
+				<label for="toggle-all">Marca todas como completadas</label>
+				<ul class="todo-list"></ul>
+			</section>
+			<footer class="footer">
+				<span class="todo-count"><strong id="todo-count">0</strong> pendiente(s)</span>
+				<ul class="filters">
+					<li>
+						<a class="selected filtro" class="selected">Todos</a>
+					</li>
+					<li>
+						<a class="filtro">Pendientes</a>
+					</li>
+					<li>
+						<a class="filtro">Completados</a>
+					</li>
+				</ul>
+				<button class="clear-completed">Borrar completados</button>
+			</footer>
+		</section>
+		<footer class="info">
+			<p>Para agregar la nueva tarea presionar <strong>enter</strong></p>
+			<p>Creado por <a href="https://github.com/cedax">Sedax</a></p>
+		</footer>
+	</body>
+</html>
