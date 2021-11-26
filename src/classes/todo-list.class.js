@@ -6,11 +6,15 @@ export class TodoList {
     constructor() {
         this.todos = [];
         
-        for(let todo of JSON.parse(localStorage.getItem('todos'))) {
+        this.cargarLocalStorage();
+        this.contarTodosIncompletos();
+    }
+
+    cargarLocalStorage() {
+        const todosJson = JSON.parse(localStorage.getItem('todos')); if(!todosJson) return;
+        for(let todo of todosJson) {
             this.todos.push(Todo.ReconstruirObjeto(todo));
         }
-
-        this.contarTodosIncompletos();
     }
 
     refrescarTodos() {
