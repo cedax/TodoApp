@@ -1,5 +1,6 @@
 import { Todo } from './todo.class.js';
 import { crearTodoHTML } from '../js/util-todos.js';
+import { divTodoList } from '../js/util-todos.js';
 
 export class TodoList {
     constructor() {
@@ -65,7 +66,7 @@ export class TodoList {
         });
         this.refrescarTodos();
 
-        document.querySelector('.todo-list').innerHTML = '';
+        divTodoList.innerHTML = '';
         for(let todo of this.todos) {
             crearTodoHTML(todo);
         }

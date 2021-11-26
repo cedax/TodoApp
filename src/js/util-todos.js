@@ -1,7 +1,7 @@
 import { Todo } from './../classes'
 import { todoList } from './../index'
 
-const divTodoList = document.querySelector('.todo-list');
+export const divTodoList = document.querySelector('.todo-list');
 const inputTodo = document.querySelector('.new-todo');
 const btnEliminarCompletados = document.querySelector('.clear-completed');
 const divFiltros = document.querySelector('.filters');
